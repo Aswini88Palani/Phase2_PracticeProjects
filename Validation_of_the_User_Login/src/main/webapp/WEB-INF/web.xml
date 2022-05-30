@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>ValidateUserServlet</servlet-name>
+  	<display-name>ValidateUserServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.ValidateUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ValidUserServlet</servlet-name>
+  	<display-name>ValidUserServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.ValidUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>InvalidUserServlet</servlet-name>
+  	<display-name>InvalidUserServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.servlet.InvalidUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ValidateUserServlet</servlet-name>
+  	<url-pattern>/ValidateUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ValidUserServlet</servlet-name>
+  	<url-pattern>/ValidUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>InvalidUserServlet</servlet-name>
+  	<url-pattern>/InvalidUserServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
